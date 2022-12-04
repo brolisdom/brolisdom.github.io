@@ -1,0 +1,51 @@
+.center {
+    text-align: center;
+}
+
+.slides {
+    width: 90% !important;
+}
+
+.space { 
+    display: flex; 
+    justify-content: space-between;
+  }
+
+  .demo {
+    height: auto !important;
+    transition: 1s;
+    filter: grayscale(1);
+  }
+
+  .demo:hover {
+    filter: grayscale(0);
+    transform: scale(1.01);
+  }
+
+  .arrow {
+    position: fixed !important; 
+    bottom: 0px; 
+    right: 10px; 
+    rotate: 180deg;
+    z-index: 1;
+    opacity: 0.5; 
+    transition: 1s;
+  }
+
+  .arrow:hover {
+    opacity: 1;
+  }
+
+  .arrow:active {
+    background-color: transparent;
+  }
+
+  .actions { 
+    margin-inline: auto !important;
+  }
+
+  @media (max-width: 1152px) {
+    .actions {
+      display: none !important;
+    }
+  }
