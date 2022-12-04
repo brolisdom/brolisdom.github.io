@@ -1,0 +1,20 @@
+.accordion {
+    opacity: 0.5;
+    font-size: 40px;
+    cursor: pointer;
+    /* width: 100%; */
+    transition: 1s;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.accordion:hover {
+    opacity: 1;
+}
+
+.panel {
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+}

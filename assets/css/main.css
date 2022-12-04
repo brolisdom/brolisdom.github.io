@@ -2348,12 +2348,6 @@ input, select, textarea {
 		}
 
 /* Image */
-
-	.zoom:hover {
-		transform: scale(1.04);
-    	transition: all 0.25s ease-in-out;
-	}
-
 	.image {
 		border: 0;
 		display: inline-block;

@@ -2,163 +2,369 @@
 <html>
 
 <head>
-  <title>Personal Page</title>
+  <title>Portfolio</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="icon" href="./images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/carousel.css" />
+  <link rel="stylesheet" href="assets/css/accordion.css" />
 </head>
 
+<style>  
+  .space { 
+    display: flex; 
+    justify-content: space-between;
+  }
+
+  .demo {
+    height: auto !important;
+    transition: 1s;
+    filter: grayscale(1);
+  }
+
+  .demo:hover {
+    filter: grayscale(0);
+    transform: scale(1.01);
+  }
+
+  .arrow {
+    position: fixed !important; 
+    bottom: 0px; 
+    right: 10px; 
+    rotate: 180deg;
+    z-index: 1;
+    opacity: 0.5; 
+    transition: 1s;
+  }
+
+  .arrow:hover {
+    opacity: 1;
+  }
+
+  .actions { 
+    margin-inline: auto !important;
+  }
+
+  @media (max-width: 1152px) {
+    .actions {
+      display: none !important;
+    }
+  }
+</style>
+
 <body class="is-preload">
+  <a href="#intro" class="arrow scrolly" >
+    <span class="label">Intro</span>
+  </a>
+
   <div id="wrapper">
-    <section class="intro">
+    <section class="intro" id="intro">
       <header>
-        <h1>Braulio Domínguez</h1>
-        <strong>Contacto: +52 5613555357</strong>
-        <br>
-        <strong>brolisdom99@gmail.com</strong>
-        <br>
-        <strong>brolisdom@outlook.com</strong>
-        <br>
-        <strong>Redes sociales:</strong>
-        <a href="https://github.com/brolisdom" target="blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.facebook.com/braulio.dominguez.10004" target="blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://t.me/brolisdom" target="blank">
-          <i class="fab fa-telegram"></i>
-        </a>
-        <h3>
-          <a href="./docs/resume.pdf" target="blank">CURRICULUM VITAE</a>
-        </h3>
-        <ul class="actions">
-          <li>
-            <a href="#first" class="arrow scrolly">
-              <span class="label">Next</span>
-            </a>
-          </li>
-        </ul>
+        <h1>Hello! I'm Braulio D.</h1>
+        <h3>Systems Engineer</h3>
+        
+        <div>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/brauliosdom" target="blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          &nbsp;
+          <strong>Resume:</strong>
+          <a href="./docs/Resume.pdf" target="blank">
+            <i class="fa fa-file-pdf"></i>
+          </a>
+        </div>
       </header>
-      <div class="content">
+
+      <ul class="actions">
+        <li>
+          <a href="#experience" class="scrolly">
+            <span class="label">Experience</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="scrolly">
+            <span class="label">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#education" class="scrolly">
+            <span class="label">Education</span>
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="scrolly">
+            <span class="label">Skillset</span>
+          </a>
+        </li>
+        <li>
+          <a href="#courses" class="scrolly">
+            <span class="label">Courses</span>
+          </a>
+        </li>
+      </ul>
+      
+      <div class="content" style="z-index: 2;">
         <span class="image fill" data-position="center">
-          <img src="images/me.png" alt="" />
+          <img src="images/photo.jpg" alt="" />
         </span>
       </div>
     </section>
 
-    <section id="first">
+    <section id="experience">
       <header>
-        <h2>FORMACION</h2>
+        <h2>Experience</h2>
       </header>
+
       <div class="content">
-        <strong>CENTRO DE ESTUDIOS TECNOLOGICOS #1</strong>
-        <br>Técnico en redes de cómputo<br>
-        <i>08/2014 - 07/2017</i>
-        <hr>
-        <strong>ESCUELA SUPERIOR DE COMPUTO</strong>
-        <br>Ingeniero en sistemas computacionales<br>
-        <i>08/2017 - 2022</i>
-        <div class="gallery">
-          <a href="https://www.escom.ipn.mx/" class="landscape zoom" target="blank">
-            <img src="images/escom.jpg" alt="" />
+        <h2>About my work experience...</h2>
+        <p>I have been working in the web development field for a couple of years. Currently, I'm looking for a new challenge to continue growing in this area.</p>
+
+        <div class="space">
+          <strong>Web Developer Junior</strong>
+          <a href="https://techgenies.com/" target="blank">
+            <i>at Techgenies</i>
+          </a>
+        </div>
+        From July 2022 to November 2022
+        <p>I worked on a web system for a US client. I used PHP and Perl on the backend and jQuery (JS) on the frontend. Some of my tasks were bug fixing, system maintenance, as well as the analysis and normalization of the database.</p>
+
+        <div class="space">
+          <strong>Backend Developer Internship</strong>
+          <a href="https://mexicoo.mx/arancel-s-a-de-c-v--661328" target="blank">
+            <i>at Arancel</i>
+          </a>
+        </div>
+        From October 2021 to June 2022
+        <p>I worked on a web application for a customs agency. I used Django (Python) as a REST framework. Some of my tasks were automating processes such as creating financial reports, sending emails, invoicing, and accountant’s office.</p>
+
+        <div class="space">
+          <strong>Fullstack Developer Trainee</strong>
+          <a href="https://meengo.mx" target="blank">
+            <i>at Meengo</i>
+          </a>
+        </div>
+        From January 2021 to December 2021
+        <p>I worked on a website for a startup. I used React (JS) as frontend and Laravel (PHP) as backend. Some of my tasks were refactoring components from object oriented to functional paradigm in order to improve code readability.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <header>
+        <h2>Projects</h2>
+      </header>
+
+      <div class="content">
+        <h2>About my personal projects...</h2>
+        <p>As part of personal challenges to test myself, I have developed different applications ranging from websites, mobile applications and even videogames.</p>
+
+        <div class="space">
+          <strong>Videogame</strong>
+          <i>ESCOMplicado</i>
+        </div>
+        Project for an engineering degree. The game's goal is to study topics learned in the university with a high failure rate in a fun way. Collaborating with 2 colleagues, we used the game engine Unity (C#) and Supabase (Serverless).
+
+        <div class="accordion" style="text-align: center;">
+          <i class="fa fa-chevron-down"></i>
+        </div>
+        <div class="panel gallery">
+          The project is currently under development.
+          <a href="images/projects/escomplicado/image1.jpg" class="landscape">
+            <img src="images/projects/escomplicado/image1.jpg" class="demo" />
+          </a>
+          <a href="images/projects/escomplicado/image2.jpg">
+            <img src="images/projects/escomplicado/image2.jpg" class="demo" />
+          </a>
+          <a href="images/projects/escomplicado/image3.jpg">
+            <img src="images/projects/escomplicado/image3.jpg" class="demo" />
+          </a>
+          <a href="images/projects/escomplicado/image4.jpg" class="landscape">
+            <img src="images/projects/escomplicado/image4.jpg" class="demo" />
+          </a>
+        </div>
+        <br>
+
+        <div class="space">
+          <strong>Web Page</strong>
+          <a href="https://guerra-robots.herokuapp.com/" target="blank">
+            <i>Guerra de robots</i>
+          </a>
+        </div>
+
+        Project for the registration of users to a robotics tournament for university students. Collaborating with a colleague, we used the JavaScript language on both server (NodeJS) and client (Vanilla) side and Heroku for its deployment.
+
+        <div class="accordion" style="text-align: center;">
+          <i class="fa fa-chevron-down"></i>
+        </div>
+        <div class="panel gallery">
+          Heroku has announced that it will stop being free, so the link may stop working.
+          <a href="images/projects/guerra-robots/image1.jpg" class="landscape">
+            <img src="images/projects/guerra-robots/image1.jpg" class="demo" />
+          </a>
+          <a href="images/projects/guerra-robots/image2.jpg">
+            <img src="images/projects/guerra-robots/image2.jpg" class="demo" />
+          </a>
+          <a href="images/projects/guerra-robots/image3.jpg">
+            <img src="images/projects/guerra-robots/image3.jpg" class="demo" />
+          </a>
+        </div>
+        <br>
+
+        <div class="space">
+          <strong>Mobile App</strong>
+          <i>C1 - Habits</i>
+        </div>
+
+        Project for a client who needed a way to assign activities and see the progress of each one, with the goal of creating habits on them. For its development, I used technologies such as React Native (JS) and Firebase (Serverless).
+
+        <div class="accordion" style="text-align: center;">
+          <i class="fa fa-chevron-down"></i>
+        </div>
+        <div class="panel gallery">
+          The app stopped being available for download on Google play for a while ago...
+          <a href="images/projects/c1-habits/image2.jpg">
+            <img src="images/projects/c1-habits/image2.jpg" class="demo" />
+          </a>
+          <a href="images/projects/c1-habits/image3.jpg">
+            <img src="images/projects/c1-habits/image3.jpg" class="demo" />
+          </a>
+          <a href="images/projects/c1-habits/image1.jpg" class="landscape">
+            <img src="images/projects/c1-habits/image1.jpg" class="demo" />
           </a>
         </div>
       </div>
     </section>
 
-    <section>
+    <section id="education">
       <header>
-        <h2>TRABAJOS</h2>
+        <h2>Education</h2>
+      </header>
+
+      <div class="content">
+        <h2>About my professional education...</h2>
+        <p>Since high school, I discovered my passion for technology, especially for programming since it is an activity that allows you to create practically anything.</p>
+
+        <div class="space">
+          <strong>Computer systems engineer</strong>
+          <a href="https://www.escom.ipn.mx" target="blank">
+            <i>at IPN - ESCOM</i>
+          </a>
+        </div>
+        From July 2018 to Currently (expected to finish in 2023)
+        <p></p>
+
+        <div class="space">
+          <strong>Industrial robotics engineer</strong>
+          <a href="https://www.esimeazc.ipn.mx" target="blank">
+            <i>at IPN - ESIME A.</i>
+          </a>
+        </div>
+        From July 2017 to June 2018 (career exchange)
+        <p></p>
+
+        <div class="space">
+          <strong>Computer network technician</strong>
+          <a href="https://www.cet1.ipn.mx" target="blank">
+            <i>at IPN - CET 1</i>
+          </a>
+        </div>
+        From July 2014 to June 2017 (graduated)
+        <p></p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <header>
+        <h2>Skillset</h2>
       </header>
       <div class="content">
-        <div class="content">
-          <div class="gallery">
-            <div>
-              <strong>DESARROLLADOR WEB EN MEENGO</strong>
-              <br>
-              <i>01/2021 - Presente</i>
-            </div>
-            <a href="https://meengo.mx" class="landscape zoom" target="blank">
-              <img src="images/gallery/jobs1/meengo1.jpg" alt="" />
-            </a>
-            <a href="https://meengo.mx" class="zoom" target="blank">
-              <img src="images/gallery/jobs1/meengo2.jpg" alt="" />
-            </a>
-            <a href="https://meengo.mx" class="zoom" target="blank"> 
-              <img src="images/gallery/jobs1/meengo3.jpg" alt="" />
+        <ul class="feature-icons">
+          <li class="icon solid fa-laptop">
+            <strong>
+              Front-end
+            </strong>
+            <br> - ReactJS
+            <br> - AngularJS
+            <br> - VueJS
+          </li>
+          <li class="icon solid fa-server">
+            <strong>Back-end</strong>
+            <br> - Django
+            <br> - Laravel
+            <br> - NodeJS
+          </li>
+          <li class="icon solid fa-mobile">
+            <strong>Mobile</strong>
+            <br> - React Native
+            <br> - Flutter
+            <br> - Kotlin
+          </li>
+          <li class="icon solid fa-database">
+            <strong>Databases</strong>
+            <br> - MySQL
+            <br> - MongoDB
+            <br> - PostgreSQL
+          </li>
+          <li class="icon solid fa-code">
+            <strong>Version control</strong>
+            <br> - BitBucket
+            <br> - GitHub
+          </li>
+          <li class="icon solid fa-cloud">
+            <strong>Cloud services</strong>
+            <br> - Azure
+            <br> - GCP
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="courses">
+      <header>
+        <h2>Courses</h2>
+      </header>
+
+      <div class="content">
+        <div class="slideshow-container gallery">
+          <div class="slides fade" style="width: 90%">
+            <a href="images/courses/Udemy-python.jpg" class="landscape">
+              <img src="images/courses/Udemy-python.jpg" class="demo">
             </a>
           </div>
+          <div class="slides fade" style="width: 90%">
+            <a href="images/courses/Udemy-fullstack.jpg" class="landscape">
+              <img src="images/courses/Udemy-fullstack.jpg" class="demo">
+            </a>
+          </div>
+          <div class="slides fade" style="width: 90%">
+            <a href="images/courses/Udemy-js.jpg" class="landscape">
+              <img src="images/courses/Udemy-js.jpg" class="demo">
+            </a>
+          </div>
+          <div class="slides fade" style="width: 90%">
+            <a href="images/courses/Udemy-php.jpg" class="landscape">
+              <img src="images/courses/Udemy-php.jpg" class="demo">
+            </a>
+          </div>
+        </div>
+        <br>
+          
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(0)"></span> 
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
       </div>
     </section>
 
-    <section>
+    <!-- <section id="contact">
       <header>
-        <h2>PROYECTOS</h2>
+        <h2>Contact</h2>
       </header>
-      <div class="content">
-        <div class="content">
-          <div class="gallery">
-            <div>
-              <strong>C1 - HABITS</strong>
-              <br>
-              <i>Aplicación Móvil</i>
-            </div>
-            <a href="https://play.google.com/store/apps/details?id=com.brolisdom.C1Habits" class="landscape zoom" target="blank">
-              <img src="images/gallery/project2/habits1.jpg" alt="" />
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.brolisdom.C1Habits" class="zoom" target="blank">
-              <img src="images/gallery/project2/habits2.jpg" alt="" />
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.brolisdom.C1Habits" class="zoom" target="blank">
-              <img src="images/gallery/project2/habits3.jpg" alt="" />
-            </a>
-          </div>
-          <hr>
-          <div class="gallery">
-            <div>
-              <strong>GUERRA DE ROBOTS</strong>
-              <br>
-              <i>Página Web</i>
-            </div>
-            <a href="https://guerra-robots.herokuapp.com/" class="landscape zoom" target="blank">
-              <img src="images/gallery/project1/robots1.jpg" alt="" />
-            </a>
-            <a href="https://guerra-robots.herokuapp.com/" class="zoom" target="blank">
-              <img src="images/gallery/project1/robots2.jpg" alt="" />
-            </a>
-            <a href="https://guerra-robots.herokuapp.com/" class="zoom" target="blank">
-              <img src="images/gallery/project1/robots3.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <header>
-        <h2>CERTIFICADOS</h2>
-      </header>
-      <div class="content">
-        <div class="content">
-          <div class="gallery">
-            <a href="images/gallery/courses/php-course.jpg" class="landscape zoom">
-              <img src="images/gallery/courses/php-course.jpg" alt="" />
-            </a>
-            <a href="images/gallery/courses/js-course.jpg" class="landscape zoom">
-              <img src="images/gallery/courses/js-course.jpg" alt="" />
-            </a>
-            <a href="images/gallery/courses/fs-course.jpg" class="landscape zoom">
-              <img src="images/gallery/courses/fs-course.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    </section> -->
   </div>
 
   <!-- Scripts -->
@@ -168,6 +374,46 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          this.style.rotate = '0deg';
+          panel.style.maxHeight = null;
+        } else {
+          this.style.rotate = '180deg';
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+  </script>
 </body>
 
 </html>
