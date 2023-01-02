@@ -24,7 +24,7 @@
 
   .arrow {
     position: fixed !important; 
-    bottom: 0px; 
+    bottom: -100px; 
     right: 10px; 
     rotate: 180deg;
     z-index: 1;
